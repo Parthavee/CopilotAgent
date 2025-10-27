@@ -1,0 +1,114 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .octofit-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: #3a506b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f4f4f4;
+}
+
+.App-link, a, .navbar-brand, .nav-link {
+  color: #1b6ca8 !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-link:hover, a:hover, .navbar-brand:hover, .nav-link:hover {
+  color: #e17055 !important;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1b6ca8 0%, #274690 100%) !important;
+  box-shadow: 0 2px 8px rgba(39,70,144,0.08);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-link {
+  color: #e0eafc !important;
+}
+.nav-link.active {
+  color: #f9ca24 !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #274690;
+  font-weight: 700;
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+  background: linear-gradient(90deg, #1b6ca8 0%, #274690 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(39,70,144,0.08);
+}
+.btn-primary:hover {
+  background: #e17055;
+  color: #fff;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(39,70,144,0.06);
+}
+.table thead {
+  background: #1b6ca8;
+  color: #fff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #e0eafc;
+}
+.table-hover tbody tr:hover {
+  background: #f9ca24 !important;
+  color: #274690;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(39,70,144,0.10);
+  margin-bottom: 2rem;
+}
+.card-title {
+  color: #1b6ca8;
+  font-weight: 700;
+}
+
+/* Favicon and logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
